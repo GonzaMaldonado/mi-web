@@ -35,9 +35,12 @@ git status -s ||ver el status más corto
 
 git diff ||para ver los cambios hechos
 git diff --staged ||ver cambios hechos en el stage
+git diff <ramamaster> <ramaB> ||para comparar ramas
 
 git branch ||saber en que rama nos encontramos, y cuantas hay
 git branch <nameR> ||crear nueva rama,pero no se mueve a ella,solo la crea
+git branch -m <nameR> <newNameR> ||para cambiar de nombre a una rama
+git branch -d <nameR> ||para borrar una rama
 git log --oneline ||ver el historial de mis commits
 
 git checkout -b <nameRama> ||Para crear nueva rama y moverme directo a ella
@@ -46,6 +49,8 @@ git checkout <nombreRama>  ||para cambiar de rama
 cat <nameArchivo> ||muestra el contenido del archivo
 
 git marge <nameRamab>  ||para agregar los cambios de una rama a la rama main/master
+el branch tiene que estar en la rama que se van a realizar los cambios
+
 
 git remote add origin https://github.com/GonzaMaldonado/mi-web.git
 || para agregar un repo remoto
@@ -53,4 +58,11 @@ git remote add origin https://github.com/GonzaMaldonado/mi-web.git
 git push -u origin master  ||para subir nuestros cambios al repo remoto
 -u origin master ||es para crear la rama master
 git push ||para realizar los cambios a la carpeta master
-git push -u origin <ramab> ||Para realizar cambios en una rama que no sea la master, antes hay que hacer un checkout -b para cambiarse de rama(no estar en la master)
+git push -u origin <ramab> ||Para realizar cambios en una rama que no 
+sea la master, antes hay que hacer un checkout -b para cambiarse de 
+rama(no estar en la master)
+
+git clone <urlRelRepo> ||clonar el repo completo
+git pull <nameRepoRemot(originPorConvencion)> <RamaQueEstemosUtilizando>
+|| para clonar las partes que no tenga el repo master(no se clona el 
+repo completo)
