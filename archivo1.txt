@@ -1,9 +1,11 @@
 chanchito feliz
 chanchito feliz
 
+contra para push de git= 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
 
 
-ls ||para ver las carpetas o archivos
+
+ls ||para ver las carpetas y archivos
 ls -a ||para ver hasta las carpetas ocultas
 pwd ||saber la ubicacion en la que me encuentro
 cd ||para moverme entre carpetas, con espacio y".." si quiero retroceder
@@ -35,9 +37,10 @@ git diff ||para ver los cambios hechos
 git diff --staged ||ver cambios hechos en el stage
 
 git branch ||saber en que rama nos encontramos, y cuantas hay
+git branch <nameR> ||crear nueva rama,pero no se mueve a ella,solo la crea
 git log --oneline ||ver el historial de mis commits
 
-git checkout -b <nameRama> ||Para crear nueva rama
+git checkout -b <nameRama> ||Para crear nueva rama y moverme directo a ella
 git checkout <nombreRama>  ||para cambiar de rama
 
 cat <nameArchivo> ||muestra el contenido del archivo
