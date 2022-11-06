@@ -1,2 +1,53 @@
 chanchito feliz
 chanchito feliz
+
+
+
+ls ||para ver las carpetas o archivos
+ls -a ||para ver hasta las carpetas ocultas
+pwd ||saber la ubicacion en la que me encuentro
+cd ||para moverme entre carpetas, con espacio y".." si quiero retroceder
+mkdir ||seguida de su nombre para crear una nueva carpeta
+git init ||para iniciar un repositorio en git
+code . ||para abrir el editor de codigo desde la terminal
+git status ||para mostrarnos el estado actual de nuestro repositorio
+1- git add <nombreArchivo> ||para agregar un archivo en especifico, con un espacio se puede agregar más de un archivo a la vez
+git add *.txt ||para agregar todos los archivos con extension .txt(puede ser cualquier extension de archivo el txt es un ejemplo)
+git add . ||para agregar todos los archivos en el repositorio(considerado mala practica)
+1.5 git checkout -- <nameArchivo> ||Para deshacer los cambios hechos(o recuperar un archivo eliminado)
+2- git commit -m "Descripcion commit" ||para comitear los archivos
+git commit ||es otra opcion
+rm <nameArchivo> |||para eliminar un archivo 
+git rm <nameArch> ||para remover un archivo
+
+Tanto como para agregar,cambiar archivos es el mismo proceso
+git add,git commit
+Para eliminar:
+git rm , git commit
+
+
+mv <nameA> <NewName> || para cambiar el nombre de un archivo
+git mv <nameA> <newName> ||de git para renombrar un archivo
+
+git status -s ||ver el status más corto
+
+git diff ||para ver los cambios hechos
+git diff --staged ||ver cambios hechos en el stage
+
+git branch ||saber en que rama nos encontramos, y cuantas hay
+git log --oneline ||ver el historial de mis commits
+
+git checkout -b <nameRama> ||Para crear nueva rama
+git checkout <nombreRama>  ||para cambiar de rama
+
+cat <nameArchivo> ||muestra el contenido del archivo
+
+git marge <nameRamab>  ||para agregar los cambios de una rama a la rama main/master
+
+git remote add origin https://github.com/GonzaMaldonado/mi-web.git
+|| para agregar un repo remoto
+
+git push -u origin master  ||para subir nuestros cambios al repo remoto
+-u origin master ||es para crear la rama master
+git push ||para realizar los cambios a la carpeta master
+git push -u origin <ramab> ||Para realizar cambios en una rama que no sea la master, antes hay que hacer un checkout -b para cambiarse de rama(no estar en la master)
